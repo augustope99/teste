@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+.Hidden {
+    opacity: 0;
+    filter: blur(10px);
+    transition: all 2s;
+    transform: translateX(-100%);
+}
+.prima{
+    margin-top: 155px;
+    margin-bottom: 178px;
+
+}
+.Show {
+    opacity: 1;
+    transition: all 2s;
+    filter: blur(0px);
+    transform: translateX(0%);
+}
+header {
+    background-color: rgb(2, 142, 167);
+    color: #ffffff;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+ul {
+    display: flex; /* Faz a lista ficar em linha */
+    justify-content: center; /* Centraliza os itens */
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o espaçamento interno */
+    margin: 0; /* Remove a margem */
+    background-color: #ffffff; /* Cor de fundo da lista */
+    padding: 10px; /* Um pouco de espaçamento interno */
+    border-radius: 80px; /* Bordas arredondadas */
+}
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+li:hover {
+    animation: pulse 2s infinite; /* Aplica a animação ao passar o mouse */
+}
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+li {
+    margin-right: 30px; /* Espaço entre os itens */
+    padding: 15px; /* Aumenta o espaçamento interno nos itens */
+    background-color: rgb(2, 142, 167); /* Cor de fundo dos itens da lista */
+    border: 1px solid rgb(255, 255, 255); /* Bordas dos itens */
+    border-radius: 80px; /* Bordas arredondadas nos itens */
+    transition: transform 0.3s; /* Transição suave */
+     min-width: 100px; /* Define uma largura mínima pros itens */
+    text-align: center; /* Centraliza o texto nos itens */
+    cursor: pointer;
+     
+}
+a {
+    color: rgb(247, 247, 247); /* Muda a cor do texto do link para preto */
+    text-decoration: none; /* Remove o sublinhado */
+    display: block; 
+}
+
+a:hover {
+    color: rgb(32, 222, 255); /* Muda a cor quando o mouse passa em cima */
+}
+
+li:hover {
+    transform: scale(1.0); /* Aumenta o tamanho do item quando o mouse passa em cima */
+}
+.apresentacao {
+    width: 100%;
+    height: 10%;
+    
+}
+.logo {
+    width: 100%; /* Faz o logo ocupar toda a largura disponível */
+    height: auto; /* Mantém a proporção do logo */
+    max-height: 150px; /* Define uma altura máxima, ajusta conforme necessário */
+    transition: transform 0.3s, opacity 0.3s; /* Efeito de transição suave */
+    opacity: 1; /* Opacidade inicial */
+    background-color: #ffffff;
+}
+header > h1{
+    box-shadow: 10px 0px 20px #333;
+}
+
+.logo:hover {
+    transform: scale(1.3); /* Aumenta um pouco ao passar o mouse */
+    opacity: 0.9; /* Diminui levemente a opacidade */
+}
+.backs {
+    background-image: url('produtos.png');
+    image-rendering: -webkit-optimize-contrast; /* Para navegadores como Safari */
+    image-rendering: crisp-edges; /* Para navegadores modernos */
+    image-rendering: pixelated; /* Para garantir imagem nítida */
+    
+}
+.centro {
+    text-align: center; /* Centraliza o texto */
+    margin-left: 20px; /* Ajuste esse valor conforme necessário */
+    color:  rgb(2, 142, 167);
+    background-color:  rgb(255, 255, 255);
+}
+#canaisdecontato{
+    background-color: #fffefe; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+}
+#header{
+    background-color: #ffffff;
+}
